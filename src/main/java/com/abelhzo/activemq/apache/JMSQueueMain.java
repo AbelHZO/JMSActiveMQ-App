@@ -29,8 +29,8 @@ public class JMSQueueMain {
 		/**
 		 * Comentar y descomentar para enviar un xml o un objecto.
 		 */
-//		String typeSend = "XML";
-		String typeSend = "OBJ";
+		String typeSend = "XML";
+//		String typeSend = "OBJ";
 		JMSQueueProducer producerQueue = new JMSQueueProducer(connectionFactory);
 		for(int i = 1; i <= 15; i++) {
 			producerQueue.sendQueue(i, typeSend);
