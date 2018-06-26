@@ -1,0 +1,30 @@
+Este paquete tiene la funcionalidad Java JMS (Topics And Queues), configurados para funcionar con el 
+modulo del servidor wildFly-11.0.0.Final.
+
+/**
+* El usuario y password debe de ser creado con el user-add.bat en ApplicationUser con el rol "guest" 
+* o "UserTopicJMS" asignado en la configuracion de ActiveMQ del archivo standalone-full.xml 
+* 
+* Los usuario y roles se guandan en:
+* 
+* C:\wildfly-11.0.0.Final\standalone\configuration\application-roles.properties
+* C:\wildfly-11.0.0.Final\standalone\configuration\application-users.properties
+* 
+* C:\wildfly-11.0.0.Final\domain\configuration\application-roles.properties
+* C:\wildfly-11.0.0.Final\domain\configuration\application-users.properties
+* 
+* NOTA: Para utilizar WildFlyInitialContextFactory y los paquetes prefixes de jboss
+* se agrego el jar del jboss-client.jar que viene en la carpeta bin del server.
+* No se agrega atravez del maven sino a travez del Java Build Path de Eclipse.
+*
+* Para proyectos Maven se puede agregar la siguiente dependencia, según sea la versión del
+* wildfly:
+*
+*		<dependency>
+*			<groupId>org.wildfly</groupId>
+*			<artifactId>wildfly-jms-client-bom</artifactId>
+*			<version>11.0.0.Final</version>
+*			<type>pom</type>
+*		</dependency>
+* 
+*/

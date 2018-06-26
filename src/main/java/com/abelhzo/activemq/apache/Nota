@@ -1,0 +1,14 @@
+Este paquete tiene la funcionalidad Java JMS (Topics And Queues), configurados para funcionar con el 
+software de Apache (ActiveMQ).
+
+/**
+* Para las clases de JMS se utiliza la dependencia en el maven:
+* 
+* 	<dependency>
+*		<groupId>org.apache.activemq</groupId>
+*		<artifactId>activemq-all</artifactId>
+*		<version>5.15.4</version>
+*	</dependency>
+*
+* Que es la sugerida por la pagina de ActiveMQ
+*/
